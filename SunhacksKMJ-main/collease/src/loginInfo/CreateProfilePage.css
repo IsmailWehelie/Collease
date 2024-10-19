@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #E0E0E0;
+}
+
+.create-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(270deg, #64B5F6, #81C784, #FFD54F, #FF8A65, #9575CD);
+    background-size: 400% 400%;
+    animation: gradientAnimation 12s ease infinite;
+    padding: 20px;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.create-profile-box {
+    background: rgba(30, 30, 30, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.create-profile-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    color: #64B5F6;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 4px 10px rgba(33, 150, 243, 0.3);
+}
+
+h3 {
+    color: #ffffff; 
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #E0E0E0;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #424242;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #64B5F6;
+    background-color: #424242;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(100, 181, 246, 0.7);
+}
+
+button {
+    background: linear-gradient(270deg, #64B5F6, #81C784, #FFD54F, #FF8A65, #9575CD);
+    background-size: 400% 400%;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 6px 15px rgba(100, 181, 246, 0.4);
+    animation: gradientAnimation 12s ease infinite; 
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(100, 181, 246, 0.7);
+}
+
+@media (max-width: 600px) {
+    .create-profile-box {
+        padding: 20px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}

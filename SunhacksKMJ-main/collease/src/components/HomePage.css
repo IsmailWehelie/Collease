@@ -1,0 +1,317 @@
+/* General Container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(270deg, #64B5F6, #81C784, #FFD54F, #FF8A65, #9575CD);
+    background-size: 400% 400%;
+    animation: gradientAnimation 12s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    color: #E0E0E0;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Title and Header */
+.home-title {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.home-subtitle {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.form-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Form Inputs */
+.form-container label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #E0E0E0;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #424242;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #64B5F6;
+    box-shadow: 0 0 10px rgba(100, 181, 246, 0.7);
+}
+
+/* Buttons */
+.form-container button {
+    background: linear-gradient(270deg, #64B5F6, #81C784, #FFD54F, #FF8A65, #9575CD);
+    background-size: 400% 400%;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 6px 15px rgba(100, 181, 246, 0.4);
+    width: 100%;
+    max-width: 180px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    animation: gradientAnimation 12s ease infinite;
+}
+
+.form-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(100, 181, 246, 0.7);
+}
+
+/* Cancel Button */
+.cancel-button {
+    background: #ff5252;
+    border: 2px solid white;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 180px;
+}
+
+.cancel-button:hover {
+    background-color: #e53935;
+}
+
+/* Align Buttons */
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Info Text for Location */
+.form-info {
+    font-size: 12px;
+    color: #B0BEC5;
+    margin-bottom: 10px;
+}
+
+/* Interests Section */
+.interests-section {
+    margin-top: 20px;
+}
+
+.interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.interest-item {
+    background-color: #424242;
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Remove Interest Button */
+.remove-interest-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ff5252;
+    transition: background-color 0.3s ease;
+}
+
+.remove-interest-button:hover {
+    background-color: #e53935;
+}
+
+.remove-interest-button:focus {
+    outline: none;
+}
+
+/* Prompts Section */
+.prompts-container {
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.prompts-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.7);
+}
+
+.prompts-container h3 {
+    margin-bottom: 15px;
+    color: #E0E0E0;
+}
+
+/* Prompts List */
+.prompts-list {
+    height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #424242;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.prompt-item {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #424242;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+
+.prompt-item:hover {
+    background-color: #555;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* New Search Button */
+.new-search-button {
+    background: linear-gradient(135deg, #2196F3, #1E88E5);
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 8px 20px rgba(33, 150, 243, 0.4);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 180px;
+}
+
+.new-search-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 25px rgba(33, 150, 243, 0.6);
+}
+
+/* Search Results */
+.search-results {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.search-results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.search-results li {
+    background: rgba(42, 42, 42, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.search-results li:hover {
+    background-color: rgba(33, 33, 33, 0.9);
+}
+
+/* University Cards */
+.university-list {
+    margin-top: 20px;
+}
+
+.university-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.university-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.university-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.university-card:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
